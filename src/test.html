@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS & AOS Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .custom-section {
+            height: 500px; /* Just for demonstration */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto py-10">
+        <h1 class="text-3xl font-bold text-center mb-10">Tailwind CSS & AOS Example</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="custom-section bg-gray-200 p-8 flex items-center justify-center" data-aos="fade-right">
+                <div class="max-w-xs">
+                    <h2 class="text-2xl font-bold mb-4">Section 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </div>
+            </div>
+            <div class="custom-section bg-gray-300 p-8 flex items-center justify-center" data-aos="fade-left">
+                <div class="max-w-xs">
+                    <h2 class="text-2xl font-bold mb-4">Section 2</h2>
+                    <p>Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+</html>
