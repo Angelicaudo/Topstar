@@ -6,21 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
-    <title>TopStars</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TopStar</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header class="bg-orange-600 flex justify-between px-5 md:px-18 sm:px-24 items-center h-16">
-        <div class="text-4xl font-semibold text-white"><a href="/">TopStar</a></div>
+        <div class="text-4xl font-semibold text-white"><a href="" id="home">TopStar</a></div>
         <nav>
             <ul>
-                <li class="font-medium text-lg"><a href="/home">Home</a></li>
-                <li class="font-medium text-lg"><a href="/products">About us</a></li>
-                <li class="font-medium text-lg"><a href="/about">Contact us</a></li>
-                <!-- <li><a href="/about">Contact</a></li>
-          <li id="login"><a href="/login" >Login</a></li>
-          <li id="signup"><a href="/signup">Login</a></li> -->
+                <li class="font-medium text-lg"><a href="#home">Home</a></li>
+                <li class="font-medium text-lg"><a href="#about">About us</a></li>
+                <li class="font-medium text-lg"><a href="#contact">Contact us</a></li>
             </ul>
         </nav>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -28,109 +25,91 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu bg-orange-600">
-                <li class="font-medium text-lg"><a href="/home">Home</a></li>
-                <li class="font-medium text-lg"><a href="/products">About us</a></li>
-                <li class="font-medium text-lg"><a href="/about">Contact us</a></li>
+                <li class="font-medium text-lg"><a href="#home">Home</a></li>
+                <li class="font-medium text-lg"><a href="#about">About us</a></li>
+                <li class="font-medium text-lg"><a href="#contact">Contact us</a></li>
             </ul>
         </div>
     </header>
 
-    <section class="flex justify-around items-center hero px-5 md:px-5 sm:px-0">
-        <div>
+    <section class="flex flex-col sm:flex-row justify-between items-center hero px-5 md:px-24 my-8 sm:my-0">
+        <div class="flex flex-col gap-4 sm:w-1/2">
             <div class="flex flex-col gap-2">
-                <h1 class="text-4xl md:text-5xl sm:text-6xl font-semibold ">Your <a class="main" href="">Design</a>
-                </h1>
-                <h1 class="text-4xl md:text-5xl sm:text-6xl font-semibold">Perfect Design </h1>
+                <h1 class="text-4xl md:text-5xl sm:text-6xl font-semibold">Chat, Game</h1>
+                <h1 class="text-4xl md:text-5xl sm:text-6xl font-semibold">And <a class="main" href="#">Earn</a></h1>
             </div>
-            <div class="flex flex-col my-4">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                <p>lit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                <p>magna aliqua</p>
+            <div class="my-4">
+                <p class="text-sm md:text-lg">Explore multiplayer tournaments, chat, and cryptocurrency rewards – where gaming meets messaging for endless fun and earnings!</p>
             </div>
             <div class="flex gap-4">
                 <div>
-                    <img class="w-48" src="./appstore.png" alt="">
+                    <img class="w-32 sm:w-48" src="./appstore2.png" alt="">
                 </div>
                 <div>
-                    <img class="w-48" src="./googleplay.png" alt="">
+                    <img class="w-32 sm:w-48" src="./googleplay2.png" alt="">
                 </div>
             </div>
         </div>
-
+    
         <div class="py-6">
-            <img class=" " src="./Group 2 (2).png" alt="">
+            <img class="w-48 sm:w-auto" src="./Group 3 - Copy.png" alt="">
         </div>
     </section>
-
+    
     <section class=" bg-orange-600">
         <div class="text-white py-6 sm:py-8 lg:py-12 ">
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-                <p class="mb-2 text-center font-bold md:mb-3 lg:text-lg">About App</p>
+                <p id="about" class="mb-2 text-center font-bold md:mb-3 lg:text-lg">About App</p>
 
-                <h2 class="mb-4 text-center text-2xl font-bold  md:mb-6 lg:text-3xl">Revolutionary way to build the web
+                <h2 class="mb-4 text-center text-2xl font-bold  md:mb-6 lg:text-3xl">Instant messaging & livestream
+                    multiplayer gaming app.
                 </h2>
 
-                <p class="mx-auto max-w-screen-md text-center md:text-lg">This is a section of some simple filler text,
-                    also known as placeholder text. It shares some characteristics of a real written text but is random
-                    or otherwise generated.</p>
+                <p class="mx-auto max-w-screen-md text-center md:text-lg">TopStar is an instant messaging and livestream
+                    multiplayer gaming app. It focuses on team and individual game tournaments, as well as private and
+                    community chats. The app utilizes cryptocurrency, peer-to-peer (p2p) transactions, and local banking
+                    services for funding and rewarding users.</p>
             </div>
         </div>
 
 
         <div
             class="px-10 sm:px-20 text-center items-center mb-16 grid grid-cols-1 gap-12 pt-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:pt-8 h-64- p-4 ">
-            <div
-                class="flex flex-col gap-6 bg-white drop-shadow h-52 px-2 sm:px-4 py-4 rounded-xl hover:bg-black hover:text-white">
-                <h1 class="font-bold main">About App</h1>
-                <p class=" text-left ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                    officia eveniet
-                    laboriosam.</p>
-            </div>
-            <div
-                class="flex flex-col gap-6 bg-white drop-shadow h-52 px-2 sm:px-4 py-4 rounded-xl hover:bg-black hover:text-white">
-                <h1 class="font-bold main">About App</h1>
-                <p class=" text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                    officia eveniet
-                    laboriosam.</p>
-            </div>
-            <div
-                class="flex flex-col gap-6 bg-white drop-shadow h-52 px-2 sm:px-4 py-4 rounded-xl hover:bg-black hover:text-white">
-                <h1 class="font-bold main">About App</h1>
-                <p class=" text-left ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                    officia eveniet
-                    laboriosam.</p>
-            </div>
-            <div
-                class="flex flex-col gap-6 bg-white drop-shadow h-52 px-2 sm:px-4 py-4 rounded-xl hover:bg-black hover:text-white">
-                <h1 class="font-bold main">About App</h1>
-                <p class=" text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-                    officia eveniet
-                    laboriosam.</p>
-            </div>
+            <img class="w-80 h-60 rounded-2xl" src="./chess.jpg" alt="" srcset="">
+            <img class="w-80 h-60 rounded-2xl" src="./Whot.jpg" alt="">
+            <img class="w-80 h-60 rounded-2xl" src="./scrabble.jpg" alt="">
+            <img class="w-80 h-60 rounded-2xl" src="./Poker.jpg" alt="">
         </div>
     </section>
 
 
     <section>
-        <div class="px-20 cta sm:px-10 flex flex-col sm:flex-row justify-center sm:justify-evenly">
-            <div class="py-1 sm:py-20">
-                <p class="text-5xl cta1 w-9/12 md:w-10/12 font-semibold leading-tight">Download Topstar <a class=" main"
-                        href="">Mobile App Today</a></p>
-                <div class="flex text-center items-center flex-col sm:flex-row  gap-2 sm:gap-6">
-                    <img class="h-16 md:h-14 sm:h-20 w-40 md:w-40 sm:w-52" src="./appstore 2.png" alt="">
-                    <img class="h-16 md:h-14 sm:h-20 w-40 md:w-40 sm:w-52" src="./googleplay 2.png" alt="">
+        <div class="px-20 cta sm:px-10 flex flex-col items-center sm:flex-row justify-center sm:justify-center">
+            <div class=" flex flex-col  gap-6 py-1 sm:py-20">
+               <div>
+                <p class="text-5xl cta1 w-8/12 md:w-10/12 font-semibold leading-tight">Download Topstar <a class=" main"
+                    href="">Mobile App Today</a></p>
+               </div>
+
+            <div class="flex gap-4">
+                <div>
+                    <img class="w-48" src="./appstore2.png" alt="">
+                </div>
+                <div>
+                    <img class="w-48" src="./googleplay2.png" alt="">
                 </div>
             </div>
-            <div>
-                <img src="./Group 3.png" alt="" srcset="">
-            </div>
+        </div>
+        <div>
+            <img src="./Group 3.png" alt="" srcset="">
+        </div>
 
         </div>
     </section>
 
     <section>
-        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8 ">
-            <div class="mb-16 grid grid-cols-1 gap-12 border-t pt-10 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 lg:pt-12">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8 " id="contact">
+            <div class="mb-16 grid grid-cols-1 gap-12  md:grid-cols-3 lg:grid-cols-4 lg:gap-8 lg:pt-12">
                 <div class="col-span-full lg:col-span-2">
                     <!-- logo - start -->
                     <div class="mb-4 lg:-mt-2">
@@ -207,7 +186,7 @@
                     <nav class="flex flex-col gap-4">
                         <div>
                             <a href="#"
-                                class="text-black transition duration-100 mainH active:text-indigo-600">+234696909434</a>
+                                class="text-black transition duration-100 mainH active:text-indigo-600">+2349067468544</a>
                         </div>
 
                         <div>
@@ -220,7 +199,7 @@
                 </div>
             </div>
 
-            <div class="border-t py-8 text-center text-sm ">© 2024 - Present TopStars. All rights
+            <div class="border-t py-8 text-center text-sm ">© 2024 - Present TopStar. All rights
                 reserved.</div>
         </footer>
         </div>
